@@ -1,25 +1,29 @@
 import HeartIcon from '../atoms/icons/Heart';
 
-const links = [
-	{
-		to: '/#story',
+export const links = {
+	story: {
+		to: 'story',
 		label: 'Our Story',
 	},
-	{
-		to: '/#location',
+	location: {
+		to: 'location',
 		label: 'Location and Info',
 	},
-	{
-		to: '/#faq',
+	rsvp: {
+		to: 'rsvp',
+		label: 'RSVP',
+	},
+	faq: {
+		to: 'faq',
 		label: 'Frequently Asked Questions',
 	},
-];
+};
 
 export default function Header() {
 	return (
-		<>
-			<header>
-				<nav className="absolute z-10 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent">
+		<header>
+			<div className="container mx-auto">
+				<nav className="z-10 my-10 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent">
 					<div className="relative flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
 						<div className="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
 							<a href="/#home" aria-label="logo" className="flex items-center space-x-2">
@@ -55,9 +59,12 @@ export default function Header() {
 						>
 							<div className="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0">
 								<ul className="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm">
-									{links.map((link) => (
+									{Object.values(links).map((link) => (
 										<li>
-											<a href={link.to} className="block transition hover:text-primary dark:hover:text-white md:px-4">
+											<a
+												href={`/#${link.to}`}
+												className="block transition hover:text-primary dark:hover:text-white md:px-4"
+											>
 												<span>{link.label}</span>
 											</a>
 										</li>
@@ -67,7 +74,7 @@ export default function Header() {
 						</div>
 					</div>
 				</nav>
-			</header>
-		</>
+			</div>
+		</header>
 	);
 }
