@@ -1,4 +1,4 @@
-import HeartIcon from '../atoms/icons/Heart';
+import { HeartIcon } from '../atoms/icons/Heart';
 
 export const links = {
 	story: {
@@ -21,9 +21,9 @@ export const links = {
 
 export default function Header() {
 	return (
-		<header>
-			<div className="container mx-auto">
-				<nav className="z-10 my-10 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent">
+		<header className="sticky left-0 top-0 z-[100]">
+			<div className="mx-auto">
+				<nav className="absolute z-10 mb-10 w-full border-b  border-black/5 bg-base-100 dark:border-white/5 lg:border-transparent">
 					<div className="relative flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
 						<div className="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
 							<a href="/#home" aria-label="logo" className="flex items-center space-x-2">
