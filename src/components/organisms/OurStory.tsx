@@ -1,5 +1,6 @@
 import Timeline, { TimelineProps } from '../atoms/Timeline';
 import { CakeIcon } from '../atoms/icons/Cake';
+import { CalendarIcon } from '../atoms/icons/Calendar';
 import { ChatIcon } from '../atoms/icons/Chat';
 import { GlobeIcon } from '../atoms/icons/Globe';
 import { HeartIcon } from '../atoms/icons/Heart';
@@ -47,11 +48,17 @@ const events: TimelineProps['events'] = [
 		date: new Date('30 Jun 2022'),
 		icon: <HouseIcon fill="#7BAFD4" />,
 	},
+	{
+		name: 'Married at Last',
+		description: 'Janae and Itai will be married on December 21st, 2023!',
+		date: new Date('21 Dec 2023'),
+		icon: <CalendarIcon fill="#7BAFD4" />,
+	},
 ];
 
 export default function OurStory() {
 	return (
-		<div id={links.story.to} className="mx-10 pt-20">
+		<div id={links.story.to} className="mx-auto w-1/2 py-20">
 			<h2 className="mx-auto text-4xl font-extrabold dark:text-white">Our Story</h2>
 			<Timeline events={events} />
 		</div>

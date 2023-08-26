@@ -3,7 +3,7 @@ export interface TimelineProps {
 }
 export default function Timeline(props: TimelineProps) {
 	return (
-		<ol className="relative  my-20 border-l border-gray-200 dark:border-gray-700">
+		<ol className="relative my-20 border-l border-gray-200 dark:border-gray-700">
 			{props.events.map((event, index) => {
 				return (
 					<li className="mb-10 ml-6" key={index}>

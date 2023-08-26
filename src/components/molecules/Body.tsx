@@ -1,11 +1,13 @@
+import LocationAndInfo from '../organisms/LocationAndInfo';
 import OurStory from '../organisms/OurStory';
 import Header from './Header';
 
 export default function Body() {
 	return (
-		<div className="relative">
+		<div className="relative bg-neutral">
 			<Header />
 			<OurStory />
+			<LocationAndInfo />
 		</div>
 	);
 }
