@@ -91,9 +91,12 @@ export default function Header() {
 							</div>
 						</div>
 						{menuIsOpen && (
-							<div id="navlink-mobile" className="m-auto flex min-h-[100px] flex-col items-center justify-between">
+							<div
+								id="navlink-mobile"
+								className="m-auto flex min-h-[100px] flex-col items-center justify-between lg:hidden"
+							>
 								<ul className="items-center justify-center">
-									<li className="my-2 border-b border-gray-400">
+									<li className="my-2">
 										{Object.values(links).map((link) => (
 											<li>
 												<a
