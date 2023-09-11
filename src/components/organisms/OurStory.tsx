@@ -7,6 +7,7 @@ import { HeartIcon } from '../atoms/icons/Heart';
 import { HouseIcon } from '../atoms/icons/House';
 
 import { links } from '../molecules/Header';
+import Section from '../molecules/Section';
 
 const events: TimelineProps['events'] = [
 	{
@@ -58,9 +59,8 @@ const events: TimelineProps['events'] = [
 
 export default function OurStory() {
 	return (
-		<div id={links.story.to} className="mx-auto w-1/2 py-20">
-			<h2 className="mx-auto text-4xl font-extrabold dark:text-white">Our Story</h2>
-			<Timeline events={events} />
-		</div>
+		<>
+			<Section link={links.story.to} title="Our Story" body={<Timeline events={events} />} />
+		</>
 	);
 }

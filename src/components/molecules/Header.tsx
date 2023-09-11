@@ -18,6 +18,10 @@ export const links = {
 		to: 'faq',
 		label: 'Frequently Asked Questions',
 	},
+	contact: {
+		to: 'contact',
+		label: 'Contact Us',
+	},
 };
 
 const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-primary transition ease transform duration-300`;
