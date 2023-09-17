@@ -21,7 +21,8 @@ const questionsAndAnswers: { question: string; answer: string | JSX.Element }[] 
 	},
 	{
 		question: 'What is the weather like in NC in December?',
-		answer: 'terrible',
+		answer:
+			'In December, North Carolina weather varies. It can be as warm as 60°F during the day, but gets colder after the sun goes down (around 40°F). There is a small chance we will have some light snow, as some days do get below freezing.',
 	},
 	{
 		question: 'What will the wedding-day timeline look like?',
@@ -45,10 +46,12 @@ const questionsAndAnswers: { question: string; answer: string | JSX.Element }[] 
 		answer:
 			'We have chosen The Graham Mill as our wedding venue for our special day! Unfortunately, one of the venue’s rules is that children must be accompanied by an adult; this adult is not allowed to consume alcohol while the children are at the venue.',
 	},
+	/*
 	{
 		question: 'What type of food and drink will be served during the cocktail hour and reception?',
 		answer: '',
 	},
+	*/
 	{
 		question: 'Will there be an open bar?',
 		answer:
@@ -65,6 +68,7 @@ const questionsAndAnswers: { question: string; answer: string | JSX.Element }[] 
 					altColor="primary"
 					newTab={true}
 				/>
+				.
 			</>
 		),
 	},
@@ -75,11 +79,20 @@ const questionsAndAnswers: { question: string; answer: string | JSX.Element }[] 
 	},
 	{
 		question: 'When will the reception end? Will there be an after-party?',
-		answer: '',
+		answer: 'The reception will end at 10:30 PM. There are no plans for an after-party.',
 	},
 	{
-		question: '',
-		answer: '',
+		question: 'Who is the officiant for the wedding?',
+		answer: (
+			<>
+				<PrettyLink
+					url={'https://kehillahsynagogue.org/about-us/meet-our-rabbi/'}
+					text={'Rabbi Jen Feldman'}
+					altColor="primary"
+					newTab={true}
+				/>
+			</>
+		),
 	},
 ];
 
