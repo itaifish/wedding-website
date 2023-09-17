@@ -9,6 +9,11 @@ const eventItinerary = (
 
 const questionsAndAnswers: { question: string; answer: string | JSX.Element }[] = [
 	{
+		question: 'I got my save the date but I never got my invitation.',
+		answer:
+			'We are only sending out save-the-dates. This website contains all the needed information and has the RSVP link.',
+	},
+	{
 		question: 'What is the dress code?',
 		answer:
 			'We are opting to not have a specific dress code because we want all of our guests to feel comfortable in whatever they decide to wear! It is possible that many people will decide to dress semi-formal. Please no white dresses. ',
