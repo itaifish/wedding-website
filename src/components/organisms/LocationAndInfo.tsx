@@ -11,8 +11,9 @@ const LocationAndInfo = () => {
 			body={
 				<>
 					<p className="my-5 text-base dark:text-white">
-						The wedding will be held at <PrettyLink url="https://thegrahammill.com/" text="The Graham Mill" /> in
-						Graham, North Carolina on December 21ˢᵗ 2021.
+						The wedding will be held at{' '}
+						<PrettyLink url="https://thegrahammill.com/" text="The Graham Mill" newTab={true} /> in Graham, North
+						Carolina on December 21ˢᵗ 2021.
 					</p>
 					<GrahamMillMap />
 				</>
