@@ -9,10 +9,8 @@ const ContactUs = () => {
 			title="Contact Us"
 			body={
 				<>
-					<p className="my-5 text-base dark:text-white">
-						Questions? Concerns? Just wanna chat? Here's how you can reach out:
-					</p>
-					<ul className="list-none">
+					<p className="my-5 text-white">Questions? Concerns? Just wanna chat? Here's how you can reach out:</p>
+					<ul className="list-none text-white">
 						<li>By Phone:</li>
 						<li>
 							<ul className="list-disc">
