@@ -22,7 +22,7 @@ export const links = {
 		to: 'contact',
 		label: 'Contact Us',
 	},
-};
+} as const;
 
 const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-primary transition ease transform duration-300`;
 
