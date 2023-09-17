@@ -18,6 +18,10 @@ export const links = {
 		to: 'faq',
 		label: 'Frequently Asked Questions',
 	},
+	event: {
+		to: 'event',
+		label: 'Event Itinerary',
+	},
 	contact: {
 		to: 'contact',
 		label: 'Contact Us',

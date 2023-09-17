@@ -1,4 +1,5 @@
 import ContactUs from '../organisms/ContactUs';
+import EventItinerary from '../organisms/EventItinerary';
 import FrequentlyAskedQuestions from '../organisms/FrequentlyAskedQuestions';
 import LocationAndInfo from '../organisms/LocationAndInfo';
 import OurStory from '../organisms/OurStory';
@@ -13,6 +14,7 @@ export default function Body() {
 			<LocationAndInfo />
 			<RSVP />
 			<FrequentlyAskedQuestions />
+			<EventItinerary />
 			<ContactUs />
 		</div>
 	);

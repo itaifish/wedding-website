@@ -3,6 +3,9 @@ import { links } from '../molecules/Header';
 import Section from '../molecules/Section';
 
 const location = <PrettyLink url={`#${links.location.to}`} text={'The Location'} altColor="primary" />;
+const eventItinerary = (
+	<PrettyLink url={`#${links.event.to}`} text={'The Event Itinerary'} altColor="primary"></PrettyLink>
+);
 
 const questionsAndAnswers: { question: string; answer: string | JSX.Element }[] = [
 	{
@@ -26,7 +29,7 @@ const questionsAndAnswers: { question: string; answer: string | JSX.Element }[] 
 	},
 	{
 		question: 'What will the wedding-day timeline look like?',
-		answer: 'For a specific wedding-day timeline, please see the Event Itinerary section of our website!',
+		answer: <>For a specific wedding-day timeline, please see {eventItinerary} section of our website!</>,
 	},
 	{
 		question: 'How can I get to the wedding venue? Will transportation be provided?',
