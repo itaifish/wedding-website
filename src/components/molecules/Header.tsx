@@ -26,6 +26,10 @@ export const links = {
 		to: 'event',
 		label: 'Event Itinerary',
 	},
+	gifts: {
+		to: 'gifts',
+		label: 'Gifts and Registry',
+	},
 	contact: {
 		to: 'contact',
 		label: 'Contact Us',
