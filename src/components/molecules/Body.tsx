@@ -4,6 +4,7 @@ import FrequentlyAskedQuestions from '../organisms/FrequentlyAskedQuestions';
 import LocationAndInfo from '../organisms/LocationAndInfo';
 import OurStory from '../organisms/OurStory';
 import RSVP from '../organisms/RSVP';
+import WeddingParty from '../organisms/WeddingParty';
 import Header from './Header';
 
 export default function Body() {
@@ -14,6 +15,7 @@ export default function Body() {
 			<LocationAndInfo />
 			<RSVP />
 			<FrequentlyAskedQuestions />
+			<WeddingParty />
 			<EventItinerary />
 			<ContactUs />
 		</div>
