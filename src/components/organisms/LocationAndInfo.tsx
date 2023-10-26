@@ -13,8 +13,18 @@ const LocationAndInfo = () => {
 					<p className="my-5 text-base dark:text-white">
 						The wedding will be held at{' '}
 						<PrettyLink url="https://thegrahammill.com/" text="The Graham Mill" newTab={true} /> in Graham, North
-						Carolina on December 21ˢᵗ 2021.
+						Carolina on December 21ˢᵗ 2021. We have a block of rooms at the{' '}
+						<PrettyLink
+							url={'https://www.marriott.com/en-us/hotels/rdufm-fairfield-inn-and-suites-mebane/overview/'}
+							text="Fairfield Inn & Suites Mebane"
+						/>
+						. Reservation link is here:{' '}
+						<PrettyLink
+							url="https://www.marriott.com/event-reservations/reservation-link.mi?id=1697832541095&key=GRP&app=resvlink"
+							text="https://www.marriott.com/event-reservations/reservation-link.mi?id=1697832541095&key=GRP&app=resvlink"
+						/>
 					</p>
+
 					<GrahamMillMap />
 				</>
 			}
