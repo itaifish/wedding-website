@@ -1,4 +1,4 @@
-import heroImage from '../../assets/itai_janae_hero.jpg';
+import heroImage from '../../assets/itai_janae_hero.png';
 import Body from '../molecules/Body';
 
 const IntroductionHeroCard = () => {
