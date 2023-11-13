@@ -10,8 +10,9 @@ const GiftsAndRegistry = () => {
 			body={
 				<>
 					<p className="my-5 text-white">
-						Just your presence is enough presents(hah!) for us. However, should you decide to give us a gift, we have an
-						Amazon and Target registry, and would also be happy to accept cash. It is Jewish custom to give{' '}
+						Just your presence is enough presents(hah!) for us. However, should you decide to give us a gift, we have a
+						Crate & Barrel, Amazon and Target registry, and would also be happy to accept cash. It is Jewish custom to
+						give{' '}
 						<PrettyLink
 							newTab
 							url={
@@ -22,6 +23,13 @@ const GiftsAndRegistry = () => {
 						to celebrate life. We would also be honored if you donated to a good cause in our name.
 					</p>
 					<ul>
+						<li>
+							<PrettyLink
+								newTab
+								url="https://www.crateandbarrel.com/gift-registry/janae-gamara/r6817044"
+								text="Crate & Barrel Registry"
+							/>
+						</li>
 						<li>
 							<PrettyLink
 								newTab
