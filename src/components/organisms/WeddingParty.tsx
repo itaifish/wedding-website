@@ -5,6 +5,8 @@ import RaePicture from '../../assets/wedding-party/Raelyssa.jpg';
 import MossPicture from '../../assets/wedding-party/Moss.jpg';
 import LydiaPicture from '../../assets/wedding-party/Lydia.jpg';
 import SophiePicture from '../../assets/wedding-party/Sophie.jpg';
+import BenPicture from '../../assets/wedding-party/Ben.png';
+
 import { Card } from '../molecules/Card';
 
 const weddingParty = [
@@ -17,6 +19,11 @@ const weddingParty = [
 		name: 'Raelyssa Gamara',
 		pic: RaePicture,
 		bio: "This is Raelyssa, the maid of honor and sister of the bride. She's looked up to Janae her whole life and watched her grow and blossom into the woman she is today. She has nothing but admiration for her older sister and hopes to one day achieve as much as she has. ",
+	},
+	{
+		name: 'Ben Meadows',
+		pic: BenPicture,
+		bio: "Hello! I'm Ben and I'm proud to say I've known Itai since the 6th grade. I've learned so many things from Itai over the years; how to play basketball, and when to at least try and catch a friend who's falling. He simultaneously taught me how to come to terms with losing and the game of chess. He started my entire career as a software developer, as he's the person who taught me how to code. Most importantly, Itai has taught me what it means to be not only a good person, but also a good friend. And believe it or not, I'm still learning from him today. He and Janae have also taught me what a happy, healthy, and so obviously in love couple ought to look like. I am equal parts proud, excited, relieved, and grateful to be the best man at what will undoubtedly be an amazing wedding!",
 	},
 	{
 		name: 'Moss Rahman',
