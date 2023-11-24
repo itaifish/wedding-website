@@ -7,6 +7,7 @@ import LydiaPicture from '../../assets/wedding-party/Lydia.jpg';
 import SophiePicture from '../../assets/wedding-party/Sophie.jpg';
 import BenPicture from '../../assets/wedding-party/Ben.png';
 import ShanePicture from '../../assets/wedding-party/Shane.jpg';
+import CaitPicture from '../../assets/wedding-party/Cait.jpg';
 
 import { Card } from '../molecules/Card';
 
@@ -45,6 +46,11 @@ const weddingParty: { name: string; pic: string; bio: string }[] = [
 		name: 'Sophie Rivkin-Fish',
 		pic: SophiePicture,
 		bio: 'Hi my name is Sophie! I’ve known Itai since he was 4 years old, right after I was born. Because I am his sister. I didn’t think the day would come that he got married, and yet here we are…so mazel tov to Itai and Janae!!! I wish lots of good luck to Janae for the next 60 or so years of putting up with him. Remember to take deep breaths and don’t feed him peppers or cinnamon. He goes through phases with mushroom. Avoid discussing astrology or crystals and hold his hand while the airplane leaves for takeoff. That’s pretty much it. Cheers! ',
+	},
+	{
+		name: 'Cait Breedlove',
+		pic: CaitPicture,
+		bio: 'Cait (left) met itai during freshman year of college and then he introduced her to Janae and they’ve all been friends since. Cait even lived with the couple for a year after college. She is very happy for Itai and Janae and is excited to be a part of their big day',
 	},
 ];
 
