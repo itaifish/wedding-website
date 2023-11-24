@@ -6,6 +6,7 @@ import MossPicture from '../../assets/wedding-party/Moss.jpg';
 import LydiaPicture from '../../assets/wedding-party/Lydia.jpg';
 import SophiePicture from '../../assets/wedding-party/Sophie.jpg';
 import BenPicture from '../../assets/wedding-party/Ben.png';
+import ShanePicture from '../../assets/wedding-party/Shane.jpg';
 
 import { Card } from '../molecules/Card';
 
@@ -19,6 +20,11 @@ const weddingParty = [
 		name: 'Raelyssa Gamara',
 		pic: RaePicture,
 		bio: "This is Raelyssa, the maid of honor and sister of the bride. She's looked up to Janae her whole life and watched her grow and blossom into the woman she is today. She has nothing but admiration for her older sister and hopes to one day achieve as much as she has. ",
+	},
+	{
+		name: "Shane O'Connor",
+		pic: ShanePicture,
+		bio: "Having known Itai for twenty years, Shane has had the privilege to watch him grow up, going from a precocious young boy with an endless appetite for learning into a courageous young man whose future seems brighter by the day. Still maintaining a close friendship even after all these years, Shane looks forward to seeing Itai continue to realize his untapped potential, and is eager to celebrate the new milestone in his good friend's life.",
 	},
 	{
 		name: 'Ben Meadows',
