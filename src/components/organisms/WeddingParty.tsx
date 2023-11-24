@@ -10,7 +10,7 @@ import ShanePicture from '../../assets/wedding-party/Shane.jpg';
 
 import { Card } from '../molecules/Card';
 
-const weddingParty = [
+const weddingParty: { name: string; pic: string; bio: string }[] = [
 	{
 		name: 'Katey Clausen',
 		pic: KateyPicture,
@@ -46,7 +46,7 @@ const weddingParty = [
 		pic: SophiePicture,
 		bio: 'Hi my name is Sophie! I’ve known Itai since he was 4 years old, right after I was born. Because I am his sister. I didn’t think the day would come that he got married, and yet here we are…so mazel tov to Itai and Janae!!! I wish lots of good luck to Janae for the next 60 or so years of putting up with him. Remember to take deep breaths and don’t feed him peppers or cinnamon. He goes through phases with mushroom. Avoid discussing astrology or crystals and hold his hand while the airplane leaves for takeoff. That’s pretty much it. Cheers! ',
 	},
-] as const satisfies readonly { name: string; pic: string; bio: string }[];
+];
 
 const WeddingParty = () => {
 	return (
@@ -56,9 +56,12 @@ const WeddingParty = () => {
 			body={
 				<>
 					<div className="grid gap-4 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
-						{weddingParty.map((person) => (
-							<Card title={person.name} body={person.bio} image={person.pic} />
-						))}
+						{weddingParty
+							// eslint-disable-next-line @typescript-eslint/no-unused-vars
+							.sort((_p1, _p2) => Math.random() - 0.5)
+							.map((person) => (
+								<Card title={person.name} body={person.bio} image={person.pic} />
+							))}
 					</div>
 				</>
 			}
