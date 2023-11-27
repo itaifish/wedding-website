@@ -1,5 +1,6 @@
 export interface TimelineProps {
 	events: { name: string; description: string; tag?: string; icon?: JSX.Element; date: Date }[];
+	type: 'time' | 'date';
 }
 export default function Timeline(props: TimelineProps) {
 	return (
@@ -21,11 +22,13 @@ export default function Timeline(props: TimelineProps) {
 							)}
 						</h3>
 						<time className="mb-2 block text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-							{event.date.toLocaleDateString('en-US', {
-								year: 'numeric',
-								month: 'long',
-								day: 'numeric',
-							})}
+							{props.type === 'date'
+								? event.date.toLocaleDateString('en-US', {
+										year: 'numeric',
+										month: 'long',
+										day: 'numeric',
+								  })
+								: event.date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
 						</time>
 						<p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">{event.description}</p>
 					</li>

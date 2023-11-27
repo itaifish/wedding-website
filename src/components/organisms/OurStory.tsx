@@ -60,7 +60,7 @@ const events: TimelineProps['events'] = [
 export default function OurStory() {
 	return (
 		<>
-			<Section link={links.story.to} title="Our Story" body={<Timeline events={events} />} />
+			<Section link={links.story.to} title="Our Story" body={<Timeline events={events} type="date" />} />
 		</>
 	);
 }
