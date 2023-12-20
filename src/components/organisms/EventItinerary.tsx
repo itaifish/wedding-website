@@ -24,36 +24,31 @@ const events = [
 		name: 'Dinner',
 		description:
 			'Dinner will be served. Our caterer of choice is Sassool, which serves mediterranean food. There will be a wealth of vegetarian options.',
-		date: new Date(2023, 11, 21, 18, 15),
+		date: new Date(2023, 11, 21, 18, 30),
 		tag: 'Dinner',
+	},
+	{
+		name: 'Cake Cutting',
+		description: 'Cake cutting and dessert.',
+		date: new Date(2023, 11, 21, 19, 30),
+		tag: 'Dessert',
 	},
 	{
 		name: 'Toasts',
 		description: 'As people eat, we will do the toasts.',
-		date: new Date(2023, 11, 21, 19, 0),
+		date: new Date(2023, 11, 21, 19, 40),
 	},
 	{
 		name: 'First Dance / Money Dance',
 		description:
 			'Janae and Itai will have their first Dance, which is the traditional Money Dance in Guamanian and Filipino culture. ',
-		date: new Date(2023, 11, 21, 19, 30),
-	},
-	{
-		name: 'Rejoicing the Bride and Groom (Freilich)',
-		description: 'Assorted comedic routines.',
-		date: new Date(2023, 11, 21, 19, 45),
+		date: new Date(2023, 11, 21, 20, 0),
 	},
 	{
 		name: 'Horah Dance followed by Open Dance',
 		description:
-			'A Jewish celebratory dance where the Bridge and Groom are lifted onto chairs. Afterwords we will have open dance.',
-		date: new Date(2023, 11, 21, 20, 0),
-	},
-	{
-		name: 'Cake Cutting',
-		description: 'The cake(s) will be cut, but open dance will not be interrupted.',
-		date: new Date(2023, 11, 21, 20, 45),
-		tag: 'Dessert',
+			'A Jewish celebratory dance where the Bride and Groom are lifted onto chairs. Afterwards, we will have open dance.',
+		date: new Date(2023, 11, 21, 20, 15),
 	},
 	{
 		name: 'Exit',
