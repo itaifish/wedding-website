@@ -26,6 +26,9 @@ const LocationAndInfo = () => {
 						/>
 					</p>
 					<GrahamMillMap />
+					<h3 className="b-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 dark:text-white md:text-3xl lg:text-4xl">
+						Parking
+					</h3>
 					<p className="my-5 text-base dark:text-white">
 						Parking in all of downtown is free and widely available. The areas circled in red are the closest available
 						spots to park, but everywhere with a parking symbol is allowed. Please do not park in the parking lot of the
